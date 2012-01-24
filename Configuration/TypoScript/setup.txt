@@ -1,0 +1,4 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/boilerplate/Configuration/TypoScript/Setup/Bootstrap.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/boilerplate/Configuration/TypoScript/Setup/Language.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/boilerplate/Configuration/TypoScript/Setup/Navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:typo3conf/ext/boilerplate/Configuration/TypoScript/Setup/SEO.ts">

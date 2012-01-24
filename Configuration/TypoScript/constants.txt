@@ -1,0 +1,16 @@
+config{
+
+	# The <base> tag in the header of the document which is used by RealURL
+	baseURL = http://dev.decor-metall.de/
+	
+	# Search. This should be disabled if you are not using Indexed search!
+	index_enable = 1
+	index_externals = 1
+	
+	# Language and locallization
+	language = en
+	locale_all = en_US.UTF-8
+	
+	# Template Extension Path
+	template_path = typo3conf/ext/boilerplate
+}

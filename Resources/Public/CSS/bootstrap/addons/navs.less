@@ -1,0 +1,147 @@
+.nav.list {
+  ul {
+    li{
+      display: block;
+      padding: 3px 15px;
+      margin-left:  -15px;
+      margin-right: -15px;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	  list-style-type: none;
+    }
+  }
+}
+
+.nav li.expanding{
+  
+  ul{
+    display: none;
+  }
+  
+  &.on {
+    ul{
+      display: block;
+    }
+  }
+}
+
+.nav li.sliding{
+  float: left;
+  position: relative;
+  width: 100%;
+  
+  ul{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    
+    z-index: @zindexDropdown;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    background-color: @white;
+    border-color: #999;
+    border-color: rgba(0,0,0,.2);
+    border-style: solid;
+    border-width: 1px;
+    .border-radius(0 0 5px 5px);
+    .box-shadow(0 5px 10px rgba(0,0,0,.2));
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding;
+            background-clip: padding-box;
+    zoom: 1; // do we need this?
+    
+    li {
+      width: 100%;
+    }
+  }
+  
+  &.on {
+    ul{
+      display: block;
+    }
+  }
+}
+
+.nav {
+  .mega {
+    position: static;
+  }
+  
+  .dropdown {
+  
+    & > div {
+      position: absolute;
+      display: none;
+    
+      top: 40px;
+      z-index: @zindexDropdown;
+      float: left;
+      display: none; // none by default, but block on "open" of the menu
+      padding: 10px;
+      margin: 0; // override default ul
+      list-style: none;
+      background-color: @white;
+      border-color: #999;
+      border-color: rgba(0,0,0,.2);
+      border-style: solid;
+      border-width: 1px;
+      .border-radius(0 0 5px 5px);
+      .box-shadow(0 5px 10px rgba(0,0,0,.2));
+      -webkit-background-clip: padding-box;
+         -moz-background-clip: padding;
+              background-clip: padding-box;
+      zoom: 1; // do we need this?
+
+    
+      &.row {
+        padding: 10px 0 0;
+        left: -20px;
+        width: @siteWidth - 2;
+        
+        // Reset grid variables
+        @newGridColumnWidth:   ( ( @gridColumnWidth * 12 ) - 40) / 12;
+
+        // Bring grid mixins to recalculate widths
+        .columns(@columnSpan: 1) {
+          width: (@newGridColumnWidth * @columnSpan) + (@gridGutterWidth * (@columnSpan - 1));
+        }
+        .offset(@columnOffset: 1) {
+          margin-left: (@newGridColumnWidth * @columnOffset) + (@gridGutterWidth * (@columnOffset - 1)) + @gridGutterWidth;
+        }
+
+        // 16cols at 30px wide with 16px gutters
+        .container {
+          width: @siteWidth;
+        }
+
+        // Default columns
+        .span1     { .columns(1); }
+        .span2     { .columns(2); }
+        .span3     { .columns(3); }
+        .span4     { .columns(4); }
+        .span5     { .columns(5); }
+        .span6     { .columns(6); }
+        .span7     { .columns(7); }
+        .span8     { .columns(8); }
+        .span9     { .columns(9); }
+        .span10    { .columns(10); }
+        .span11    { .columns(11); }
+        .span12    { .columns(12); }
+        
+        p {
+          line-height: @baseLineHeight;
+        }
+      }
+    }
+  
+    &.on > div {
+      display: block;
+    }
+  }
+}
+
+.nav.pull-right .dropdown > div{
+  left: auto;
+  right: 0;
+} 

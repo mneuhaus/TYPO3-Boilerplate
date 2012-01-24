@@ -1,0 +1,79 @@
+.nav-vertical {
+  width: 100%;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px #ddd solid;
+}
+.nav-vertical li {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.nav-vertical li a, .nav-vertical li strong, .nav-vertical li span {
+  display: block;
+  padding: 3px 0px 3px 10%;
+  text-decoration: none;
+  border-bottom: 1px #ddd solid;
+  width: 90%;
+  padding-left: 10%;
+}
+.nav-vertical li a.active, .nav-vertical li strong.active, .nav-vertical li span.active {
+  color: #fff;
+  background-color: #800;
+  font-weight: bold;
+}
+.nav-vertical li span {
+  display: block;
+  font-weight: bold;
+  border-bottom: 1px #ddd solid;
+}
+.nav-vertical li a:focus, .nav-vertical li a:hover, .nav-vertical li a:active {
+  background-color: #a88;
+  color: #fff;
+  outline: 0 none;
+}
+.nav-vertical li ul li a, .nav-vertical li ul li strong, .nav-vertical li ul li span {
+  width: 80%;
+  padding-left: 20%;
+}
+/* Level 2 */
+.vlist li ul li a, .vlist li ul li strong, .vlist li ul li span {
+  width: 80%;
+  padding-left: 20%;
+}
+/* LTR */
+.vlist li ul li a:focus, .vlist li ul li a:hover, .vlist li ul li a:active {
+  background-color: #a88;
+  color: #fff;
+}
+/* Level 3 */
+.vlist li ul li ul li a, .vlist li ul li ul li strong, .vlist li ul li ul li span {
+  width: 70%;
+  padding-left: 30%;
+}
+/* LTR */
+.vlist li ul li ul li a, .vlist li ul li ul li a:visited {
+  background-color: #f0f0f0;
+  color: #222;
+}
+.vlist li ul li ul li a:focus, .vlist li ul li ul li a:hover, .vlist li ul li ul li a:active {
+  background-color: #a88;
+  color: #fff;
+}
+/* Level 4 */
+.vlist li ul li ul li ul li a, .vlist li ul li ul li ul li strong, .vlist li ul li ul li ul li span {
+  width: 60%;
+  padding-left: 40%;
+}
+/* LTR */
+.vlist li ul li ul li ul li a, .vlist li ul li ul li ul li a:visited {
+  background-color: #e8e8e8;
+  color: #111;
+}
+.vlist li ul li ul li ul li a:focus, .vlist li ul li ul li ul li a:hover, .vlist li ul li ul li ul li a:active {
+  background-color: #a88;
+  color: #fff;
+}
