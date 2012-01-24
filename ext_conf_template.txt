@@ -1,0 +1,2 @@
+# cat=basic/dev/1000; type=user[EXT:boilerplate/Classes/class.user_installer.php:user_installer->displayMessage];
+updateMessage = 0

@@ -11,7 +11,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'decor metall',
+	'title' => 'Theme',
 	'description' => '',
 	'category' => 'templates',
 	'author' => 'Marc Neuhaus',

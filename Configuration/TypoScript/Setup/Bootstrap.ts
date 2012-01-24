@@ -1,6 +1,17 @@
 page = PAGE
-page.includeCSS.bootstrap = {$config.template_path}/Resources/Public/CSS/style.css
 page {
+	headerData {
+		10 = HTML
+		10.value (
+			<link rel="shortcut icon" href="{$config.template_path}/Resources/Public/img/favicon.ico" />
+			<link rel="apple-touch-icon" href="{$config.template_path}/Resources/Public/img/apple-touch-icon.png">
+		)
+	}
+	
+	includeCSS{
+		bootstrap = {$config.template_path}/Resources/Public/CSS/style.css
+	}
+	
     10 = FLUIDTEMPLATE
     10 {
 	    file.stdWrap.cObject = CASE

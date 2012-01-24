@@ -1,7 +1,7 @@
 config{
 
 	# The <base> tag in the header of the document which is used by RealURL
-	baseURL = http://dev.decor-metall.de/
+	baseURL = http://localhost/projects/decor-metall/
 	
 	# Search. This should be disabled if you are not using Indexed search!
 	index_enable = 1
@@ -14,3 +14,34 @@ config{
 	# Template Extension Path
 	template_path = typo3conf/ext/boilerplate
 }
+
+
+# cat=basic/xxx/010; type=string; label= string: mein String
+t1 = Ich bin ein String
+
+# cat=basic/xxx/011; type=int; label= int: (Ganzzahl, auch negativ)
+t2 = -99
+
+# cat=basic/xxx/012; type=int+; label= int+: (Ganzzahl, nur positiv)
+t3 = 88
+
+# cat=basic/xxx/013; type=offset; label= offset: (x und y werte)
+t4 = 88, 55
+
+# cat=basic/xxx/010; type=color; label= color: eine Farbe
+t5 = ff0000
+
+# cat=basic/xxx/011; type=wrap; label= wrap: ein Wrap
+t51 = <b>|</b>
+
+# cat=basic/xxx/011; type=options[de, en, fr, zh]; label= options[de, en, fr, zh] Optionen 
+t7 = de
+
+# cat=basic/xxx/010; type=boolean; label= enable: Option anschalten
+t8 = 1
+
+# cat=basic/xxx/010; type=file[png, jpg, gif]; label= file[png, jpg, gif] eine Datei
+t9 = fileadmin/clear.gif
+
+# cat=basic/xxx/010; type=small; label= small
+t10 = xyz 
